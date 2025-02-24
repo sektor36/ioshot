@@ -99,7 +99,7 @@ def main():
 
     args = parser.parse_args()
 
-    # Determine mode
+    
     if args.https:
         mode = "https"
     elif args.http:
@@ -110,7 +110,7 @@ def main():
         print("[!] Error: You must specify either -https, -http, or -no-http.")
         return
 
-    # Process the URLs and take screenshots with the specified number of threads
+    
     process_urls(args.file, mode, args.directory, args.threads)
 
 if __name__ == "__main__":
